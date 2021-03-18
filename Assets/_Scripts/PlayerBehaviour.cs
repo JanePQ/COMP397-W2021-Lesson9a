@@ -6,7 +6,7 @@ public class PlayerBehaviour : MonoBehaviour
 {
     public CharacterController controller;
 
-    [Header("Controls")] 
+    [Header("Controls")]
     public Joystick joystick;
     public float horizontalSensitivity;
     public float verticalSensitivity;
@@ -24,18 +24,18 @@ public class PlayerBehaviour : MonoBehaviour
     public LayerMask groundMask;
     public bool isGrounded;
 
-    [Header("MiniMap")] 
+    [Header("MiniMap")]
     public GameObject miniMap;
 
-    [Header("Player Sounds")] 
+    [Header("Player Sounds")]
     public AudioSource jumpSound;
     public AudioSource hitSound;
 
 
-    [Header("HealthBar")] 
+    [Header("HealthBar")]
     public HealthBarScreenSpaceController healthBar;
 
-    [Header("Player Abilities")] 
+    [Header("Player Abilities")]
     [Range(0, 100)]
     public int health = 100;
 
@@ -124,5 +124,5 @@ public class PlayerBehaviour : MonoBehaviour
         ToggleMinimap();
     }
 
-   
+
 }
